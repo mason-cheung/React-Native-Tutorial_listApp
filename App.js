@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View,SafeAreaView, FlatList } from 'react-native';
+import { StyleSheet, Text, View,SafeAreaView, FlatList, TextInput } from 'react-native';
 import { Component } from 'react';
 
 import {Item} from './components/Item';
@@ -14,6 +14,8 @@ export default class App extends Component {
   render() {
     return (
       <SafeAreaView>
+        <Text>Add your expense</Text>
+        <TextInput/>
         <FlatList 
           data={this.listData}
           renderItem={this.renderList}
