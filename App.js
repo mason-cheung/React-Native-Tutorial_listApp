@@ -16,6 +16,7 @@ export default class App extends Component {
       <SafeAreaView>
         <Text>Add your expense</Text>
         <TextInput/>
+        <TextInput/>
         <FlatList 
           data={this.listData}
           renderItem={this.renderList}
